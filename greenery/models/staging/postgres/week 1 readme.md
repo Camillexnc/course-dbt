@@ -16,7 +16,7 @@ select sum(datediff('days', created_at_utc, delivered_at_utc ))/count(distinct o
 from stg_postgres_orders
 -- How many users have only made one purchase?  25
 Two purchases? 28
-Three+ purchases? 34
+Three+ purchases? 71
 
 SELECT COUNT(DISTINCT USER_ID)
 FROM (SELECT USER_ID,COUNT (DISTINCT ORDER_ID) AS NUM FROM STG_POSTGRES_ORDERS
@@ -26,7 +26,12 @@ WHERE NUM = 1
 SELECT COUNT(DISTINCT USER_ID)
 FROM (SELECT USER_ID,COUNT (DISTINCT ORDER_ID) AS NUM FROM STG_POSTGRES_ORDERS
 GROUP BY 1) 
-WHERE NUM = 3
+WHERE NUM = 2
+
+SELECT COUNT(DISTINCT USER_ID)
+FROM (SELECT USER_ID,COUNT (DISTINCT ORDER_ID) AS NUM FROM STG_POSTGRES_ORDERS
+GROUP BY 1) 
+WHERE NUM >= 3
 
 -- On average, how many unique sessions do we have per hour? 10.14
 select 

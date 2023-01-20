@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: int_users_addresses
+    description: This table informs each user's address. 
+  - name: int_users_orders
+    description: This table informs each user's order history. 
+  - name: int_products
+    description: This table informs each product's order history. 

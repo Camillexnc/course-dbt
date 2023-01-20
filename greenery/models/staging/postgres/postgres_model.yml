@@ -2,6 +2,13 @@ version: 2
 
 models:
   - name: stg_postgres_orders
+    description: order history 
+    columns:
+      - name: order_id
+        description: "The primary key for the order table"
+        tests:
+          - not_null
+          - unique
   - name: stg_postgres_order_items
   - name: stg_postgres_addresses
   - name: stg_postgres_users

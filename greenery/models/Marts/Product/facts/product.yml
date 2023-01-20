@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: facts_products_orders
+    description: This table informs each product's total order times and info.
+    columns:
+      - name: inventory
+        tests:
+          - positive
+       
+
+
+
+
+
+

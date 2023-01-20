@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: dim_users
+    description: This table informs each user's address and indicates if the user if international or not. 
+  - name: fact_users_
+    description: This table informs how many users we have in each city. 
+  

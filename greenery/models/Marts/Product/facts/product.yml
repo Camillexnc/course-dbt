@@ -1,6 +1,8 @@
 version: 2
 
 models:
+  - name: fact_product_conversion_rate
+    description: This table informs conversion rate by product 
   - name: facts_products_orders
     description: This table informs each product's total order times and info.
     columns:

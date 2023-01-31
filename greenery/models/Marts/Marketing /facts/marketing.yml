@@ -3,3 +3,5 @@ version: 2
 models:
   - name: facts_users_orders
     description: This table informs each user's total order times and spending amount on the site
+  - name: facts_converation_rate
+    description: This table informs overall facts_converation_rate

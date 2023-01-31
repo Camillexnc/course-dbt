@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: permission
+    description: grant roles
+  - name: lbs-kgs
+    description: lbs to kgs conversion
+  
